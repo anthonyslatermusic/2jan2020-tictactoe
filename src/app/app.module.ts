@@ -20,7 +20,9 @@ export class AppModule { }
 
 //MatSliderModule
 @Component({
-
+  selector: 'slider-formatting-example',
+  templateUrl: 'slider-formatting-example.html',
+  styleUrls: ['slider-formatting-example.css']
 })
 export class SliderFormattingExample{
 
