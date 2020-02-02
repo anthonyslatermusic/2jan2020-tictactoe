@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class SliderExampleComponent {
-  displayValue(value: number){
+  formatLabel(value: number){
     if (value >= 1000){
       return Math.round(value / 1000) + 'k'
     }

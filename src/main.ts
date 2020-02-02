@@ -9,7 +9,24 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './app/material-module';
 
-import { AppModule } from './app/app.module';
+import { SliderExampleComponent } from './app/slider-example';
+
+@NgModule({
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    MaterialModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+  ],
+  entryComponents: [SliderExampleComponent],
+  declarations: [SliderExampleComponent],
+  bootstrap: [SliderExampleComponent],
+  providers: []
+})
+export class AppModule {}
 
 platformBrowserDynamic().bootstrapModule(AppModule).then(ref => {
   // Ensure Angular destroys itself on hot reloads.
